@@ -21,7 +21,7 @@ module.exports = {
   },
   	publicPath:
     process.env.NODE_ENV === 'production'
-      ? '/MoTR/MoTR/run_motr_in_magpie/demo-Clara/'
+      ? '/alba.github.io/'
       : '/'
 //   publicPath:
 //     process.env.NODE_ENV === 'production' && process.env.REPO_NAME
