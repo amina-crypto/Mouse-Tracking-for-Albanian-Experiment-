@@ -22,7 +22,7 @@
     "stylelint-config-standard": "^20.0.0"
   },
   "dependencies": {
-    "magpie-base": "git+https://github.com/cuierd/magpie-base-MoTR.git#main",
+    "magpie-base": "git+https://github.com/Alba10/magpie-base-MoTR_sq.git#main",
     "v-blur": "^1.0.4"
   },
   "engines": {
