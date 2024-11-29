@@ -2,12 +2,12 @@
 <!--  Comprehension questions appear afterwards in the same slide -->
 
 <template>
-  <Experiment title="Eksperimenti për leximin" translate="no">
-    <InstructionScreen :title="'Mirësevini në eksperimentin për gjurmimin e mausit'">
-      <p>Në këtë studim ju do të lexoni pjesë të shkurtra teksti dhe do ti përgjigjeni pyetjeve të shkurtra rreth tyre. Megjithatë, teksti që do të shfaqet në ekran nuk do të jetë i dukshëm plotësisht. Në mënyrë që të shikoni tekstin duhet të lëvizni mausin mbi të. </p>
+  <Experiment title="Eksperiment" translate="no">
+    <InstructionScreen :title="'Mirësevini në eksperimentin për gjurmimin e mausit'" :buttonName="'Filloni Eksperimentin'">
+      <p>Në këtë eksperiment ju do të lexoni pjesë të shkurtra teksti dhe duhet ti përgjigjeni pyetjeve kuptimore rreth tyre. Megjithatë, teksti që do të shfaqet në ekran nuk do të jetë i dukshëm plotësisht. Në mënyrë që të shikoni tekstin duhet të lëvizni mausin mbi të. Për të zhvilluar eksperimentin ju duhet të përdorni një pajisje maus.</p>
 	  <p>Ju mund të shpenzoni aq kohë sa ju duhet për ta lexuar tekstin në mënyrë që ta kuptoni. Në momentin që keni përfunduar leximin, klikoni ‘Përfundo’ për të shfaqur pyetjen rreth tekstit. Pasi të ktheni përgjigjen e pyetjes klikoni ‘Vazhdo’ për të shfaqur tekstin e rradhës.</p>
+	  <p>Kohëzgjatja mesatare e eksperimentit është 15 minuta.</p>
 	  <p>Kujdes: Për mbarëvajtjen e eksperimentit ju lutem tregoni vëmendje gjatë leximit të tekstit dhe përgjigjes së pyetjeve. </p>
-	  </br>
 	  <p>Faleminderit për pjesëmarrjen në eksperiment!</p>
 	</InstructionScreen>
 
