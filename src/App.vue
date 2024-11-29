@@ -21,22 +21,22 @@
           </form>
           <div class="oval-cursor"></div>
           <template>
-            <div v-if="showFirstDiv" class="readingText" @mousemove="moveCursor" @mouseleave="changeBack">
+            <div v-if="showFirstDiv" style="white-space: pre-line" class="readingText" @mousemove="moveCursor" @mouseleave="changeBack">
               <template v-for="(word, index) of trial.text.split(' ')">
                 <span :key="index" :data-index="index" >
                   {{ word }}
                 </span>
               </template>
             </div>
-            <div class="blurry-layer" style="opacity: 0.3; filter: blur(3.5px); transition: all 0.3s linear 0s;"> 
+            <div class="blurry-layer" style="white-space: pre-line; opacity: 0.3; filter: blur(3.5px); transition: all 0.3s linear 0s;"> 
               {{trial.text}}
             </div>
           </template>
-          <button v-if="showFirstDiv" style= "bottom:10%; transform: translate(-50%, -50%)" @click="toggleDivs" :disabled="!isCursorMoving">
+          <button v-if="showFirstDiv && trial.question" style= "bottom:10%; transform: translate(-50%, -50%)" @click="toggleDivs" :disabled="!isCursorMoving">
           Përfundo
           </button>
 
-          <div v-else style = "position:absolute; bottom:10%; text-align: center; width: 100%; min-width: -webkit-fill-available;" >
+          <div v-else-if="!showFirstDiv && trial.question" style = "position:absolute; bottom:10%; text-align: center; width: 100%; min-width: -webkit-fill-available;" >
             <template>
               <form>
                 <!-- comprehension questions and the response options -->
@@ -48,8 +48,20 @@
               </form>
             </template>
           </div>
-          
-          <button v-if="$magpie.measurements.response" style="transform: translate(-50%, -50%)" @click="toggleDivs(); $magpie.saveAndNextScreen()">
+		  
+		  
+          <div v-else-if="!showFirstDiv &&!trial.question" style = "position:absolute; bottom:10%; text-align: center; width: 100%; min-width: -webkit-fill-available;" >
+            <template>
+              <form>
+                <p>Hi</p>
+              </form>
+            </template>
+          </div>
+		  
+		  <button v-if="!trial.question" style="transform: translate(-50%, -50%);" @click="$magpie.saveAndNextScreen()">
+          Vazhdo
+        </button>
+          <button v-if="$magpie.measurements.response " style="transform: translate(-50%, -50%)" @click="toggleDivs(); $magpie.saveAndNextScreen()">
             Vazhdo
           </button>
         </Slide>
