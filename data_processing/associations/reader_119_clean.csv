@@ -1,0 +1,662 @@
+sbm_id,expr_id,cond_id,para_nr,word_nr,word,duration,start_t,end_t,x_mean,y_mean,response
+119,1,1,1,0, Hëna ,358,2190,2548,640.86,138.57,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,1, është ,198,2548,2746,696,139,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,2, sateliti ,202,2746,2948,755,139,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,4, vetëm ,298,2948,3246,813.5,140.17,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,5, natyror ,293,3246,3539,870.67,143.83,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,7, Tokës. ,509,3589,4098,939.8,139,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,8, Ajo ,199,4098,4297,983.75,135.25,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,9, rrotullohet ,443,4297,4740,1044,139.56,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,10, rreth ,257,4740,4997,1101.8,144,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,11, Tokës ,250,4997,5247,1153,144,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,13, një ,200,5297,5497,1213.25,138.75,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,14, distancë ,404,6092,6496,675.25,178.75,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,15, mesatare ,249,6496,6745,740.2,178,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,17,384400,349,6847,7196,838.71,178,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,19, (238900 ,298,7348,7646,941.5,178,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,21,1.28,250,7798,8048,1024.6,176.8,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,23, ose ,192,8197,8389,1095,176,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,24, rreth ,302,8389,8691,1128.33,176,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,25,30,706,8691,9397,1156.71,176,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,26, herë ,243,9397,9640,1195.6,176,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,27, sa ,211,9640,9851,1224,176,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,28, diametri ,497,10145,10642,669,221.4,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,30, Tokës. ,199,10698,10897,731,219.75,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,31, Hëna ,251,10897,11148,783,219,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,32, përballet ,449,11148,11597,837.56,219,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,34, Tokën ,300,11740,12040,934.83,219,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,35, gjithmonë ,357,12040,12397,1003.43,219,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,37, anën ,306,12491,12797,1097.33,219,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,41," afërt, ",354,13093,13447,1199.57,219,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,43, periudha ,450,13947,14397,662.44,254.78,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,47, rrotullimit ,501,14597,15098,798.6,258.2,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,48, është ,249,15098,15347,857.8,258,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,50, barabartë ,342,15497,15839,947.14,258,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,51, me ,206,15839,16045,998.75,258,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,52, periudhën ,352,16045,16397,1061.29,258,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,55," orbitale, ",202,16543,16745,1180.25,258,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,59, mbylljes ,200,17197,17397,673.75,303.75,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,61, baticës ,295,17849,18144,751.67,301.83,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,63, Tokën. ,199,18298,18497,846,298,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,64, Kjo ,201,18497,18698,889.25,298,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,65," periudhë, ",295,18698,18993,947.83,297.5,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,67, raport ,250,19098,19348,1039.4,295,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,69," Diellin, ",202,19396,19598,1127.25,295,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,70, zgjat ,199,19598,19797,1180,295,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,73, dhe ,355,20641,20996,639.86,339.71,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,76, dukshme ,345,21149,21494,773.14,336.57,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,78, cikli ,203,21494,21697,840,331.75,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,80, fazave ,297,21697,21994,894.83,330,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,81, hënore. ,354,21994,22348,956.14,330,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,83," Tokën, ",307,22441,22748,1055.33,330.5,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,84, përveç ,299,22748,23047,1110,332.67,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,85," Diellit, ",248,23047,23295,1161.4,334.8,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,88, qenë ,451,24088,24539,641.78,369.78,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,89, objekti ,453,24539,24992,694,374,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,90, qiellor ,202,24992,25194,757.5,375.25,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,93," ndikim, ",357,25441,25798,862.86,378,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,94, veçanërisht ,400,25798,26198,946,378,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,96, ndikimin ,356,26339,26695,1061.43,377.71,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,99, gravitacional ,250,26848,27098,1190.6,377.2,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,102, qenë ,345,27548,27893,660.14,414,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,103, faktori ,201,27893,28094,705.75,414,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,104, kryesor ,248,28094,28342,758.4,414.2,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,106, krijimin ,249,28448,28697,847.4,419.2,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,108, baticave ,405,28743,29148,925,420,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,1,110, Tokës. ,350,29148,29498,1010.71,420.14,Për shkak të masës së madhe dhe gravitetit sipërfaqësor të saj
+119,1,1,2,0, PRILLI ,401,677,1078,641.75,134.62,Si një muaj mjalti në male.
+119,1,1,2,2, THYER- ,199,1078,1277,725.5,132,Si një muaj mjalti në male.
+119,1,1,2,3, Kapitulli ,194,1277,1471,793.75,132,Si një muaj mjalti në male.
+119,1,1,2,5," tretë
+Pa ",200,1519,1719,867.25,132,Si një muaj mjalti në male.
+119,1,1,2,5," tretë
+Pa ",202,2169,2371,633,169.5,Si një muaj mjalti në male.
+119,1,1,2,7, lëshuar ,292,2477,2769,702.83,173,Si një muaj mjalti në male.
+119,1,1,2,8, dorën ,254,2769,3023,755.8,173,Si një muaj mjalti në male.
+119,1,1,2,10," shoqes, ",297,3177,3474,848,173,Si një muaj mjalti në male.
+119,1,1,2,11, Besian ,293,3474,3767,914.33,174,Si një muaj mjalti në male.
+119,1,1,2,12, Vorpsi ,250,3767,4017,961.6,174,Si një muaj mjalti në male.
+119,1,1,2,13, afroi ,202,4017,4219,1009.25,174.5,Si një muaj mjalti në male.
+119,1,1,2,14, fytyrën ,249,4219,4468,1066.8,176,Si një muaj mjalti në male.
+119,1,1,2,16, xhami ,191,4529,4720,1129.5,176,Si një muaj mjalti në male.
+119,1,1,2,18," dritares, ",252,4777,5029,1201.8,177,Si një muaj mjalti në male.
+119,1,1,2,21, t'u ,200,5827,6027,641.25,213,Si një muaj mjalti në male.
+119,1,1,2,22, bindur ,295,6027,6322,683.67,213,Si një muaj mjalti në male.
+119,1,1,2,23, se ,245,6322,6567,718.8,213,Si një muaj mjalti në male.
+119,1,1,2,24, qyteti ,301,6567,6868,749.17,215,Si një muaj mjalti në male.
+119,1,1,2,26, vogël ,296,6927,7223,809.33,219.5,Si një muaj mjalti në male.
+119,1,1,2,29, cilit ,201,7519,7720,904,220,Si një muaj mjalti në male.
+119,1,1,2,31, ishin ,250,7827,8077,970,219.8,Si një muaj mjalti në male.
+119,1,1,2,33, para ,202,8221,8423,1055,217,Si një muaj mjalti në male.
+119,1,1,2,34, gjysmë ,299,8423,8722,1110.17,217.83,Si një muaj mjalti në male.
+119,1,1,2,37, fundit ,342,8875,9217,1210.43,221.71,Si një muaj mjalti në male.
+119,1,1,2,40, këmbët ,202,9422,9624,683.5,263.25,Si një muaj mjalti në male.
+119,1,1,2,40, këmbët ,295,9978,10273,681.17,255.33,Si një muaj mjalti në male.
+119,1,1,2,42, rrafshnaltës ,309,10318,10627,765.67,253,Si një muaj mjalti në male.
+119,1,1,2,44, madhe ,351,10769,11120,877.71,252.14,Si një muaj mjalti në male.
+119,1,1,2,46," Veriut, ",248,11223,11471,966.8,252,Si një muaj mjalti në male.
+119,1,1,2,47, ishte ,249,11471,11720,1007.6,252,Si një muaj mjalti në male.
+119,1,1,2,48, zhdukur ,202,11720,11922,1058.5,252,Si një muaj mjalti në male.
+119,1,1,2,53, pamja. ,249,12469,12718,1250.6,259,Si një muaj mjalti në male.
+119,1,1,2,54, Tani ,309,13018,13327,657,299.33,Si një muaj mjalti në male.
+119,1,1,2,55, përpara ,392,13327,13719,704.38,295.62,Si një muaj mjalti në male.
+119,1,1,2,58, tyre ,249,13921,14170,833.8,295,Si një muaj mjalti në male.
+119,1,1,2,59, ishte ,250,14170,14420,876.2,293,Si një muaj mjalti në male.
+119,1,1,2,61, ultësirë ,341,14577,14918,960,298.57,Si një muaj mjalti në male.
+119,1,1,2,63," pjerrët, ",201,15026,15227,1033.75,297.75,Si një muaj mjalti në male.
+119,1,1,2,68," çuditshëm, ",448,15679,16127,1235.56,296.89,Si një muaj mjalti në male.
+119,1,1,2,70," fushë, ",296,16627,16923,650.17,342.33,Si një muaj mjalti në male.
+119,1,1,2,72," mal, ",200,17077,17277,721.5,342,Si një muaj mjalti në male.
+119,1,1,2,74, pllajë. ,249,17328,17577,791.4,341.4,Si një muaj mjalti në male.
+119,1,1,2,0, Malet ,503,865,1368,647,140.5,Si një muaj mjalti në male.
+119,1,1,2,2, filluar ,252,1511,1763,768.8,139,Si një muaj mjalti në male.
+119,1,1,2,3," akoma, ",250,1763,2013,815.2,136.6,Si një muaj mjalti në male.
+119,1,1,2,7, tyre ,201,2214,2415,944.5,143,Si një muaj mjalti në male.
+119,1,1,2,8, ndihej ,294,2415,2709,987.83,143,Si një muaj mjalti në male.
+119,1,1,2,9, qyshkur ,499,2709,3208,1051.4,140.6,Si një muaj mjalti në male.
+119,1,1,2,11, dukej ,401,3317,3718,1143.88,138,Si një muaj mjalti në male.
+119,1,1,2,13, ishte ,201,3815,4016,1214.5,127,Si një muaj mjalti në male.
+119,1,1,2,14, pikërisht ,343,4719,5062,643.71,178,Si një muaj mjalti në male.
+119,1,1,2,17," që, ",201,5265,5466,774.75,173.75,Si një muaj mjalti në male.
+119,1,1,2,19, mos ,263,5607,5870,848.8,172,Si një muaj mjalti në male.
+119,1,1,2,21, pranuar ,341,5870,6211,922.57,172.14,Si një muaj mjalti në male.
+119,1,1,2,23, botën ,248,6319,6567,1003.8,176.6,Si një muaj mjalti në male.
+119,1,1,2,25," maleve, ",460,6659,7119,1079,180,Si një muaj mjalti në male.
+119,1,1,2,27, pengonte ,294,7168,7462,1169.17,176,Si një muaj mjalti në male.
+119,1,1,2,28, megjithatë ,307,7462,7769,1238.17,176,Si një muaj mjalti në male.
+119,1,1,2,29, këtë ,400,8069,8469,649.38,208.38,Si një muaj mjalti në male.
+119,1,1,2,30, truall ,191,8469,8660,676.25,210.5,Si një muaj mjalti në male.
+119,1,1,2,32, quhej ,192,8719,8911,747.75,217.5,Si një muaj mjalti në male.
+119,1,1,2,33, ultësirë. ,449,8911,9360,810.11,218,Si një muaj mjalti në male.
+119,1,1,2,34, Kështu ,259,9360,9619,858.6,218,Si një muaj mjalti në male.
+119,1,1,2,37," midistë, ",400,9811,10211,976.88,218,Si një muaj mjalti në male.
+119,1,1,2,40, ishte ,204,10460,10664,1090.25,219.25,Si një muaj mjalti në male.
+119,1,1,2,41, djerr ,202,10664,10866,1137.75,222.5,Si një muaj mjalti në male.
+119,1,1,2,42, dhe ,250,10866,11116,1173.4,225.4,Si një muaj mjalti në male.
+119,1,1,2,43, pothuajse ,449,11116,11565,1239.11,220.22,Si një muaj mjalti në male.
+119,1,1,2,45, pabanuar. ,960,11961,12921,663.74,261.37,Si një muaj mjalti në male.
+119,1,1,2,1, pas ,204,288,492,686,137.5,Si një muaj mjalti në male.
+119,1,1,2,0, Herë ,494,492,986,636.5,139.8,Si një muaj mjalti në male.
+119,1,1,2,2, here ,203,1141,1344,715.5,134,Si një muaj mjalti në male.
+119,1,1,2,3, pikëzat ,342,1344,1686,781.86,134,Si një muaj mjalti në male.
+119,1,1,2,5, vogla ,189,1744,1933,845.5,134,Si një muaj mjalti në male.
+119,1,1,2,7, shiut ,300,1994,2294,908.33,136.67,Si një muaj mjalti në male.
+119,1,1,2,9, imët ,193,2345,2538,972,139.25,Si një muaj mjalti në male.
+119,1,1,2,10, bulëzonin ,551,2538,3089,1024.18,137.91,Si një muaj mjalti në male.
+119,1,1,2,12, xhamat ,304,3237,3541,1136,136,Si një muaj mjalti në male.
+119,1,1,2,14," karrocës.
+— ",303,3582,3885,1212,138.17,Si një muaj mjalti në male.
+119,1,1,2,14," karrocës.
+— ",200,4194,4394,642.25,176,Si një muaj mjalti në male.
+119,1,1,2,15, Bjeshkët ,348,4394,4742,681.86,174.14,Si një muaj mjalti në male.
+119,1,1,2,17," Nëmura, ",404,4788,5192,772,174,Si një muaj mjalti në male.
+119,1,1,2,19, tha ,198,5239,5437,849,174,Si një muaj mjalti në male.
+119,1,1,2,24," ulët, ",189,5844,6033,973.5,174,Si një muaj mjalti në male.
+119,1,1,2,25, pak ,199,6033,6232,1010.5,174.75,Si një muaj mjalti në male.
+119,1,1,2,26, të ,203,6232,6435,1039.25,178.75,Si një muaj mjalti në male.
+119,1,1,2,27," dridhshëm, ",603,6435,7038,1094.67,179,Si një muaj mjalti në male.
+119,1,1,2,29, mund ,199,7196,7395,1192,179,Si një muaj mjalti në male.
+119,1,1,2,32, emri ,454,8341,8795,640.67,213.67,Si një muaj mjalti në male.
+119,1,1,2,34," diçkaje, ",342,8844,9186,711.57,218,Si një muaj mjalti në male.
+119,1,1,2,35, shfaqjen ,358,9186,9544,776.71,218,Si një muaj mjalti në male.
+119,1,1,2,43, kohe ,207,10333,10540,1026.25,218.25,Si një muaj mjalti në male.
+119,1,1,2,44, tepër ,346,10540,10886,1072.43,220.14,Si një muaj mjalti në male.
+119,1,1,2,46, gjatë. ,390,10994,11384,1135.38,221,Si një muaj mjalti në male.
+119,1,1,2,49, ndjeu ,250,11492,11742,1229,224.6,Si një muaj mjalti në male.
+119,1,1,2,52, emër ,593,12289,12882,645.25,259.58,Si një muaj mjalti në male.
+119,1,1,2,53, shkaktoi ,403,12882,13285,702.75,256.12,Si një muaj mjalti në male.
+119,1,1,2,56, shoqja ,409,13536,13945,812,258.25,Si një muaj mjalti në male.
+119,1,1,2,57, një ,200,13945,14145,861,255.75,Si një muaj mjalti në male.
+119,1,1,2,58, ngjethje ,440,14145,14585,906.78,257,Si një muaj mjalti në male.
+119,1,1,2,59, solemne ,305,14585,14890,973.5,257,Si një muaj mjalti në male.
+119,1,1,2,63, qejfi. ,387,15246,15633,1098.5,253.25,Si një muaj mjalti në male.
+119,1,1,2,0, Ajo ,602,574,1176,634.08,137.42,Si një muaj mjalti në male.
+119,1,1,2,1, afroi ,343,1176,1519,673.86,141,Si një muaj mjalti në male.
+119,1,1,2,2, kokën ,251,1519,1770,723,141,Si një muaj mjalti në male.
+119,1,1,2,4, ana ,200,1926,2126,801.75,141,Si një muaj mjalti në male.
+119,1,1,2,7, për ,309,2315,2624,865,141,Si një muaj mjalti në male.
+119,1,1,2,9," parë, ",301,2664,2965,932.5,141,Si një muaj mjalti në male.
+119,1,1,2,10, dhe ,261,2965,3226,958,141,Si një muaj mjalti në male.
+119,1,1,2,12, ndjeu ,247,3274,3521,1025.2,141,Si një muaj mjalti në male.
+119,1,1,2,13, aromën ,296,3521,3817,1086.33,141,Si një muaj mjalti në male.
+119,1,1,2,15, mirë ,208,3918,4126,1151.25,141,Si një muaj mjalti në male.
+119,1,1,2,17, qafës ,450,4175,4625,1216.78,141,Si një muaj mjalti në male.
+119,1,1,2,19, saj. ,592,5122,5714,638.08,177.5,Si një muaj mjalti në male.
+119,1,1,2,21, Ku? ,488,5775,6263,665.4,216.4,Si një muaj mjalti në male.
+119,1,1,2,23, bëri ,249,6365,6614,719,218,Si një muaj mjalti në male.
+119,1,1,2,25, kokë ,295,6723,7018,788.17,218,Si një muaj mjalti në male.
+119,1,1,2,26," përpara, ",449,7018,7467,844.33,219.22,Si një muaj mjalti në male.
+119,1,1,2,27, pastaj ,247,7467,7714,906.6,221,Si një muaj mjalti në male.
+119,1,1,2,28, tregoi ,355,7714,8069,968.57,222.29,Si një muaj mjalti në male.
+119,1,1,2,29, me ,202,8069,8271,1000.5,221.25,Si një muaj mjalti në male.
+119,1,1,2,30, dorë ,243,8271,8514,1032.6,215.4,Si një muaj mjalti në male.
+119,1,1,2,31," andej, ",300,8514,8814,1090.67,213.83,Si një muaj mjalti në male.
+119,1,1,2,32, por ,251,8814,9065,1131.8,213,Si një muaj mjalti në male.
+119,1,1,2,34, drejtimin ,436,9128,9564,1205.11,213,Si një muaj mjalti në male.
+119,1,1,2,36, tregonte ,405,9769,10174,658,258.12,Si një muaj mjalti në male.
+119,1,1,2,37, dora ,191,10174,10365,715.25,256,Si një muaj mjalti në male.
+119,1,1,2,41, nuk ,301,10663,10964,814.83,254.67,Si një muaj mjalti në male.
+119,1,1,2,44, tjetër ,241,11274,11515,910,255,Si një muaj mjalti në male.
+119,1,1,2,45, veçse ,250,11515,11765,959,256,Si një muaj mjalti në male.
+119,1,1,2,46, një ,251,11765,12016,998.2,256,Si një muaj mjalti në male.
+119,1,1,2,47, pështjellim ,500,12016,12516,1058.2,257.8,Si një muaj mjalti në male.
+119,1,1,2,48, mjegullash. ,311,12516,12827,1129,256.67,Si një muaj mjalti në male.
+119,1,1,2,50, S'duket ,699,13015,13714,680.43,293.07,Si një muaj mjalti në male.
+119,1,1,2,51, asgjë ,259,13714,13973,734.6,296.8,Si një muaj mjalti në male.
+119,1,1,2,53," qartë, ",188,14128,14316,804.25,296,Si një muaj mjalti në male.
+119,1,1,2,55, shpjegoi ,244,14424,14668,890.2,295.2,Si një muaj mjalti në male.
+119,1,1,2,59, akoma ,405,14965,15370,1038,294.12,Si një muaj mjalti në male.
+119,1,1,2,60, tepër ,196,15370,15566,1102.5,300.25,Si një muaj mjalti në male.
+119,1,1,2,61, larg. ,209,15566,15775,1126.5,301,Si një muaj mjalti në male.
+119,1,1,2,0, Ajo ,251,950,1201,639.4,141,Si një muaj mjalti në male.
+119,1,1,2,3, përsëri ,352,1351,1703,712.57,143,Si një muaj mjalti në male.
+119,1,1,2,4, dorën ,208,1703,1911,774.75,143,Si një muaj mjalti në male.
+119,1,1,2,6, saj ,201,2003,2204,831.25,137.5,Si një muaj mjalti në male.
+119,1,1,2,10, dhe ,249,2503,2752,949.8,138,Si një muaj mjalti në male.
+119,1,1,2,12, mbështet ,407,2800,3207,1025,140.25,Si një muaj mjalti në male.
+119,1,1,2,13, pas ,195,3207,3402,1078.75,141,Si një muaj mjalti në male.
+119,1,1,2,14, ndenjëses. ,555,3402,3957,1148.27,141.36,Si një muaj mjalti në male.
+119,1,1,2,16, lëkundjet ,357,4552,4909,650.86,176.43,Si një muaj mjalti në male.
+119,1,1,2,18, karrocës ,313,5001,5314,746.67,181,Si një muaj mjalti në male.
+119,1,1,2,19, gazeta ,391,5314,5705,809,176.12,Si një muaj mjalti në male.
+119,1,1,2,23, blerë ,205,5952,6157,966.5,181,Si një muaj mjalti në male.
+119,1,1,2,24, pak ,204,6157,6361,1006.25,181,Si një muaj mjalti në male.
+119,1,1,2,25, para ,248,6361,6609,1043,181,Si një muaj mjalti në male.
+119,1,1,2,26," nisjes, ",294,6609,6903,1088.33,181,Si një muaj mjalti në male.
+119,1,1,2,28, qytetin ,550,7001,7551,1169.18,180,Si një muaj mjalti në male.
+119,1,1,2,30, vogël ,401,7602,8003,1243.25,177,Si një muaj mjalti në male.
+119,1,1,2,32, që ,397,8353,8750,646.38,217.75,Si një muaj mjalti në male.
+119,1,1,2,33, shkruante ,301,8750,9051,694.33,215.67,Si një muaj mjalti në male.
+119,1,1,2,35, faqen ,353,9103,9456,782.43,214.86,Si një muaj mjalti në male.
+119,1,1,2,38, për ,165,9601,9766,877.67,214,Si një muaj mjalti në male.
+119,1,1,2,40, rrëshqiti ,311,9905,10216,960.5,214,Si një muaj mjalti në male.
+119,1,1,2,43," poshtë, ",460,10451,10911,1059.89,215.44,Si një muaj mjalti në male.
+119,1,1,2,44, por ,201,10911,11112,1103.5,216.25,Si një muaj mjalti në male.
+119,1,1,2,45, asnjëri ,342,11112,11454,1148,218.14,Si një muaj mjalti në male.
+119,1,1,2,47, tyre ,215,11601,11816,1232,219,Si një muaj mjalti në male.
+119,1,1,2,50, përkul ,410,12403,12813,650.62,261.75,Si një muaj mjalti në male.
+119,1,1,2,52, ngrinte. ,263,12951,13214,725.8,250.4,Si një muaj mjalti në male.
+119,1,1,2,54, buzëqeshi ,350,13354,13704,831.29,253.43,Si një muaj mjalti në male.
+119,1,1,2,55," përhumbshëm, ",598,13704,14302,938.58,256.17,Si një muaj mjalti në male.
+119,1,1,2,56, duke ,298,14302,14600,1026.17,256.5,Si një muaj mjalti në male.
+119,1,1,2,57, risjellë ,254,14600,14854,1082.8,256,Si një muaj mjalti në male.
+119,1,1,2,58, ndër ,297,14854,15151,1128.83,255.67,Si një muaj mjalti në male.
+119,1,1,2,59, mend ,301,15151,15452,1176.33,255,Si një muaj mjalti në male.
+119,1,1,2,60, titullin ,398,15452,15850,1224.12,255,Si një muaj mjalti në male.
+119,1,1,2,62," shkrimit, ",450,16201,16651,657.33,298.78,Si një muaj mjalti në male.
+119,1,1,2,63, kushtuar ,401,16651,17052,723.12,302,Si një muaj mjalti në male.
+119,1,1,2,64, udhëtimit ,400,17052,17452,814,299.88,Si një muaj mjalti në male.
+119,1,1,2,67, «Një ,202,17755,17957,928.25,298,Si një muaj mjalti në male.
+119,1,1,2,68, sensacion ,495,17957,18452,999.1,298,Si një muaj mjalti në male.
+119,1,1,2,70, këndshëm: ,601,18503,19104,1097.75,298,Si një muaj mjalti në male.
+119,1,1,2,71, Shkrimtari ,497,19104,19601,1183.1,296.6,Si një muaj mjalti në male.
+119,1,1,2,72, Besian ,299,19601,19900,1253.5,294.33,Si një muaj mjalti në male.
+119,1,1,2,73, Vorpsi ,557,20250,20807,660.55,329.45,Si një muaj mjalti në male.
+119,1,1,2,75, gruan ,300,20902,21202,738.17,334,Si një muaj mjalti në male.
+119,1,1,2,80," Dianën, ",399,21551,21950,877.5,342.25,Si një muaj mjalti në male.
+119,1,1,2,81, vendosën ,501,21950,22451,947.7,340.3,Si një muaj mjalti në male.
+119,1,1,2,83, bëjnë ,303,22551,22854,1032.5,336.67,Si një muaj mjalti në male.
+119,1,1,2,84, muajin ,547,22854,23401,1095.64,326.91,Si një muaj mjalti në male.
+119,1,1,2,86, mjaltit ,299,23501,23800,1157.17,333,Si një muaj mjalti në male.
+119,1,1,2,88, Rrafshin ,401,23900,24301,1241.12,333.88,Si një muaj mjalti në male.
+119,1,1,2,90, Veriut!» ,990,24600,25590,658.64,371.55,Si një muaj mjalti në male.
+119,1,1,2,0, Më ,451,1560,2011,642.89,140.78,Si një muaj mjalti në male.
+119,1,1,2,1, poshtë ,199,2011,2210,688.25,137,Si një muaj mjalti në male.
+119,1,1,2,2, shkrimi ,303,2210,2513,744.17,138.17,Si një muaj mjalti në male.
+119,1,1,2,3, ishte ,205,2513,2718,791.75,139,Si një muaj mjalti në male.
+119,1,1,2,4, pakëz ,242,2718,2960,845.4,139,Si një muaj mjalti në male.
+119,1,1,2,6, turbullt. ,296,3014,3310,915.17,139,Si një muaj mjalti në male.
+119,1,1,2,7, Nuk ,251,3310,3561,959.2,138.2,Si një muaj mjalti në male.
+119,1,1,2,8, kuptoi ,251,3561,3812,1007.6,134.6,Si një muaj mjalti në male.
+119,1,1,2,10, nëse ,197,3963,4160,1092.25,134,Si një muaj mjalti në male.
+119,1,1,2,11, autori ,253,4160,4413,1141.4,134,Si një muaj mjalti në male.
+119,1,1,2,13," shkrimit, ",357,4413,4770,1222.29,134,Si një muaj mjalti në male.
+119,1,1,2,15, farë ,451,5360,5811,642.33,177.56,Si një muaj mjalti në male.
+119,1,1,2,18, ishte ,201,6061,6262,757,172,Si një muaj mjalti në male.
+119,1,1,2,21, njohuri ,250,6461,6711,851.8,172,Si një muaj mjalti në male.
+119,1,1,2,25, përbashkët ,350,6911,7261,979,175,Si një muaj mjalti në male.
+119,1,1,2,26, Adrian ,414,7261,7675,1050.25,176,Si një muaj mjalti në male.
+119,1,1,2,27," Guma?), ",285,7675,7960,1110.67,176.67,Si një muaj mjalti në male.
+119,1,1,2,29, miratonte ,352,8016,8368,1205.14,179,Si një muaj mjalti në male.
+119,1,1,2,31, kishte ,600,8911,9511,645.42,219.67,Si një muaj mjalti në male.
+119,1,1,2,34, qesëndisje ,349,9711,10060,786.14,214.29,Si një muaj mjalti në male.
+119,1,1,2,37, ndaj ,200,10260,10460,913.25,218,Si një muaj mjalti në male.
+119,1,1,2,39, udhëtimi. ,899,10611,11510,997.4,219,Si një muaj mjalti në male.
+119,1,1,2,0, Asaj ,452,701,1153,650.22,136.33,Si një muaj mjalti në male.
+119,1,1,2,4, udhëtimit ,250,1501,1751,797,143.4,Si një muaj mjalti në male.
+119,1,1,2,6, ishte ,200,1801,2001,871,140,Si një muaj mjalti në male.
+119,1,1,2,7, dukur ,250,2001,2251,910.2,136,Si një muaj mjalti në male.
+119,1,1,2,10," jashtëzakonshme, ",550,2501,3051,1075.82,136,Si një muaj mjalti në male.
+119,1,1,2,13, kishte ,300,3201,3501,1217,136.5,Si një muaj mjalti në male.
+119,1,1,2,14, dëgjuar ,601,3851,4452,664.42,180.5,Si një muaj mjalti në male.
+119,1,1,2,18, gojës ,200,4902,5102,805.75,176,Si një muaj mjalti në male.
+119,1,1,2,22, javë ,199,5452,5651,924.75,176,Si një muaj mjalti në male.
+119,1,1,2,23, përpara ,351,5651,6002,978.14,176,Si një muaj mjalti në male.
+119,1,1,2,24, martesës. ,550,6002,6552,1061.64,179.45,Si një muaj mjalti në male.
+119,1,1,2,29, habit ,200,6952,7152,1203.75,182,Si një muaj mjalti në male.
+119,1,1,2,30," aspak, ",400,7152,7552,1260.88,184,Si një muaj mjalti në male.
+119,1,1,2,32, kishin ,600,8001,8601,647,213.75,Si një muaj mjalti në male.
+119,1,1,2,33, thënë ,250,8601,8851,698.8,217,Si një muaj mjalti në male.
+119,1,1,2,34, shoqet. ,352,8851,9203,759,217,Si një muaj mjalti në male.
+119,1,1,2,35, Përderisa ,449,9203,9652,828,217,Si një muaj mjalti në male.
+119,1,1,2,37, martohesh ,550,9751,10301,944.36,216.36,Si një muaj mjalti në male.
+119,1,1,2,42," jashtëzakonshëm, ",650,10801,11451,1177.54,217.46,Si një muaj mjalti në male.
+119,1,1,2,43, prej ,200,11451,11651,1269.25,219.5,Si një muaj mjalti në male.
+119,1,1,2,45, s'ke ,600,12002,12602,648.75,250.58,Si një muaj mjalti në male.
+119,1,1,2,46, për ,198,12602,12800,696.5,262,Si një muaj mjalti në male.
+119,1,1,2,48, dëgjuar ,347,12853,13200,763.29,262,Si një muaj mjalti në male.
+119,1,1,2,50, gjëra ,301,13352,13653,868.67,262,Si një muaj mjalti në male.
+119,1,1,2,52, çuditshme. ,302,13750,14052,958.83,262,Si një muaj mjalti në male.
+119,1,1,2,53, Në ,200,14052,14252,1016.5,262,Si një muaj mjalti në male.
+119,1,1,2,54, fund ,250,14252,14502,1047.4,262,Si një muaj mjalti në male.
+119,1,1,2,56," fundit, ",200,14552,14752,1110,262,Si një muaj mjalti në male.
+119,1,1,2,57, s'mund ,299,14752,15051,1179.83,261.33,Si një muaj mjalti në male.
+119,1,1,2,60, themi ,201,15250,15451,1254.25,259,Si një muaj mjalti në male.
+119,1,1,2,61, gjë ,300,15902,16202,630.5,295.67,Si një muaj mjalti në male.
+119,1,1,2,62, tjetër ,200,16202,16402,677,295,Si një muaj mjalti në male.
+119,1,1,2,65, lumja ,200,16600,16800,798.5,297.5,Si një muaj mjalti në male.
+119,1,1,2,0, Në ,450,708,1158,630.78,142.44,Si një muaj mjalti në male.
+119,1,1,2,2, vërtetë ,200,1258,1458,700.75,141,Si një muaj mjalti në male.
+119,1,1,2,3, ajo ,203,1458,1661,750.5,140,Si një muaj mjalti në male.
+119,1,1,2,4, ndihej ,246,1661,1907,783.4,140,Si një muaj mjalti në male.
+119,1,1,2,6, lumtur. ,300,1958,2258,853.17,140,Si një muaj mjalti në male.
+119,1,1,2,7, Gjithë ,350,2258,2608,910.43,139.29,Si një muaj mjalti në male.
+119,1,1,2,9, ditë ,251,2757,3008,982.4,139,Si një muaj mjalti në male.
+119,1,1,2,10, para ,300,3008,3308,1029,138.83,Si një muaj mjalti në male.
+119,1,1,2,11," dasmës, ",300,3308,3608,1082.17,138,Si një muaj mjalti në male.
+119,1,1,2,13, rrethet ,400,3758,4158,1171.62,138,Si një muaj mjalti në male.
+119,1,1,2,15," mondane, ",600,4608,5208,673.25,177.58,Si një muaj mjalti në male.
+119,1,1,2,16, gjysmë ,250,5208,5458,741.8,174.4,Si një muaj mjalti në male.
+119,1,1,2,17, artistike ,300,5458,5758,811.5,173.5,Si një muaj mjalti në male.
+119,1,1,2,19," Tiranës, ",400,5908,6308,890.88,173,Si një muaj mjalti në male.
+119,1,1,2,20, nuk ,250,6308,6558,944.6,173,Si një muaj mjalti në male.
+119,1,1,2,21, flitej ,204,6558,6762,983.25,174,Si një muaj mjalti në male.
+119,1,1,2,22, veçse ,198,6762,6960,1019.5,175.75,Si një muaj mjalti në male.
+119,1,1,2,24, udhëtimin ,400,7108,7508,1119.38,178.25,Si një muaj mjalti në male.
+119,1,1,2,26, tyre ,300,7558,7858,1200.83,180.67,Si një muaj mjalti në male.
+119,1,1,2,28, ardhshëm. ,650,8108,8758,666.46,219.92,Si një muaj mjalti në male.
+119,1,1,2,29, Shumica ,250,8758,9008,755,213,Si një muaj mjalti në male.
+119,1,1,2,30, entuziazmoheshin: ,550,9008,9558,867,213,Si një muaj mjalti në male.
+119,1,1,2,34, shkosh ,200,9808,10008,1037.5,213,Si një muaj mjalti në male.
+119,1,1,2,37, reale ,250,10258,10508,1162.6,221.4,Si një muaj mjalti në male.
+119,1,1,2,38, drejt ,201,10508,10709,1205,223,Si një muaj mjalti në male.
+119,1,1,2,41, botën ,600,11358,11958,644.5,254.17,Si një muaj mjalti në male.
+119,1,1,2,43," legjendave, ",450,11958,12408,739.22,252,Si një muaj mjalti në male.
+119,1,1,2,45, eposit ,249,12560,12809,856.4,252,Si një muaj mjalti në male.
+119,1,1,2,47," mirëfilltë, ",299,12859,13158,945,252.5,Si një muaj mjalti në male.
+119,1,1,2,52, akoma ,348,13510,13858,1137,255.29,Si një muaj mjalti në male.
+119,1,1,2,54, gjallë ,199,13908,14107,1204.5,259,Si një muaj mjalti në male.
+119,1,1,2,56, fytyrë ,301,14508,14809,639,297,Si një muaj mjalti në male.
+119,1,1,2,58, rruzullit ,198,14910,15108,729.5,294,Si një muaj mjalti në male.
+119,1,1,2,59, tokësor. ,201,15108,15309,803.25,297.5,Si një muaj mjalti në male.
+119,1,1,2,1, vijonin ,200,1085,1285,679.75,140.5,Si një muaj mjalti në male.
+119,1,1,2,3, për ,249,1736,1985,780.8,144.6,Si një muaj mjalti në male.
+119,1,1,2,4, zanat ,350,1985,2335,820.43,142,Si një muaj mjalti në male.
+119,1,1,2,6," shtojzovallet, ",450,2385,2835,900.78,142,Si një muaj mjalti në male.
+119,1,1,2,8," rapsodët, ",400,2985,3385,1034.38,138,Si një muaj mjalti në male.
+119,1,1,2,9, homerikët ,450,3385,3835,1120.56,138,Si një muaj mjalti në male.
+119,1,1,2,11, fundit ,250,3885,4135,1199.6,139,Si një muaj mjalti në male.
+119,1,1,2,13," botës, ",250,4586,4836,653.4,177,Si një muaj mjalti në male.
+119,1,1,2,15, për ,200,4936,5136,727.75,176.5,Si një muaj mjalti në male.
+119,1,1,2,16, kanunin ,299,5136,5435,778.83,176,Si një muaj mjalti në male.
+119,1,1,2,18," tmerrshëm, ",400,5486,5886,875,176,Si një muaj mjalti në male.
+119,1,1,2,20, madhështor ,500,6036,6536,1001.4,176,Si një muaj mjalti në male.
+119,1,1,2,22, asgjë ,350,6586,6936,1096.57,176,Si një muaj mjalti në male.
+119,1,1,2,23, tjetër. ,200,6936,7136,1139.75,176,Si një muaj mjalti në male.
+119,1,1,2,25, tjerët ,250,7236,7486,1219.2,181.2,Si një muaj mjalti në male.
+119,1,1,2,26, ngrinin ,651,7635,8286,657.77,209.77,Si një muaj mjalti në male.
+119,1,1,2,27, supet ,201,8286,8487,716.75,216,Si një muaj mjalti në male.
+119,1,1,2,28, për ,199,8487,8686,755.5,216,Si një muaj mjalti në male.
+119,1,1,2,29, këtë ,200,8686,8886,783.5,216,Si një muaj mjalti në male.
+119,1,1,2,30," trill, ",600,8886,9486,823.75,216,Si një muaj mjalti në male.
+119,1,1,2,32, duke ,700,9486,10186,852.86,216,Si një muaj mjalti në male.
+119,1,1,2,34, përpjekur ,550,10286,10836,934.55,215.55,Si një muaj mjalti në male.
+119,1,1,2,36, shfaqnin ,351,10936,11287,1031.29,215,Si një muaj mjalti në male.
+119,1,1,2,39, lehtë ,200,11536,11736,1143.25,219.75,Si një muaj mjalti në male.
+119,1,1,2,40, mosbesimin ,450,11736,12186,1224.67,224,Si një muaj mjalti në male.
+119,1,1,2,42," tyre, ",300,12486,12786,639.83,253.67,Si një muaj mjalti në male.
+119,1,1,2,44, cili ,199,12837,13036,691.25,247,Si një muaj mjalti në male.
+119,1,1,2,46, gjithsesi ,300,13186,13486,786.17,248,Si një muaj mjalti në male.
+119,1,1,2,48, çështje ,400,13636,14036,879.12,254,Si një muaj mjalti në male.
+119,1,1,2,49," komoditeti, ",300,14036,14336,955.5,259.5,Si një muaj mjalti në male.
+119,1,1,2,52, tepër ,300,14536,14836,1079.83,261.33,Si një muaj mjalti në male.
+119,1,1,2,55, fjala ,200,15036,15236,1184.75,260,Si një muaj mjalti në male.
+119,1,1,2,56, për ,200,15236,15436,1225.75,261.25,Si një muaj mjalti në male.
+119,1,1,2,58, udhëtim ,350,15886,16236,659.86,294,Si një muaj mjalti në male.
+119,1,1,2,59," pasmartesor, ",400,16236,16636,751.75,294,Si një muaj mjalti në male.
+119,1,1,2,62, diçka ,299,16937,17236,886.83,294.17,Si një muaj mjalti në male.
+119,1,1,2,63," delikate, ",400,17236,17636,947.75,295.88,Si një muaj mjalti në male.
+119,1,1,2,64, kurse ,301,17636,17937,1007.67,297,Si një muaj mjalti në male.
+119,1,1,2,68, akoma ,351,18386,18737,1167.57,303.57,Si një muaj mjalti në male.
+119,1,1,2,70, dhe ,200,18886,19086,1258.25,304,Si një muaj mjalti në male.
+119,1,1,2,71, kullat ,301,19635,19936,641.33,341.17,Si një muaj mjalti në male.
+119,1,1,2,75, gurta. ,248,20288,20536,801.8,338,Si një muaj mjalti në male.
+119,1,1,2,0, Kurse ,499,1018,1517,639.2,141,Si një muaj mjalti në male.
+119,1,1,2,3, rrallë ,200,1767,1967,753,141,Si një muaj mjalti në male.
+119,1,1,2,4, qenë ,200,1967,2167,792.75,141.75,Si një muaj mjalti në male.
+119,1,1,2,5, ata ,201,2167,2368,830.75,142,Si një muaj mjalti në male.
+119,1,1,2,8, dëgjonin ,348,2517,2865,912.71,144,Si një muaj mjalti në male.
+119,1,1,2,10, gjitha ,300,2917,3217,1002.17,142,Si një muaj mjalti në male.
+119,1,1,2,14, qesëndie ,300,3667,3967,1154.17,136.5,Si një muaj mjalti në male.
+119,1,1,2,16," lehtë, ",202,4066,4268,1221,138.75,Si një muaj mjalti në male.
+119,1,1,2,17, sikur ,499,4868,5367,640.8,171.7,Si një muaj mjalti në male.
+119,1,1,2,19, thoshin: ,350,5417,5767,718.29,178,Si një muaj mjalti në male.
+119,1,1,2,20," shkoni, ",249,5767,6016,787.8,178,Si një muaj mjalti në male.
+119,1,1,2,21, shkoni ,302,6016,6318,844.83,178,Si një muaj mjalti në male.
+119,1,1,2,23," Veri, ",250,6418,6668,922,178,Si një muaj mjalti në male.
+119,1,1,2,24, midis ,249,6668,6917,964.4,177,Si një muaj mjalti në male.
+119,1,1,2,25," shtojzovalleve, ",701,6917,7618,1052.36,173.21,Si një muaj mjalti në male.
+119,1,1,2,26, ndoshta ,350,7618,7968,1146.14,170,Si një muaj mjalti në male.
+119,1,1,2,29, bëjë ,199,8268,8467,1237.5,171.5,Si një muaj mjalti në male.
+119,1,1,2,30, mirë ,649,8868,9517,650.62,208.08,Si një muaj mjalti në male.
+119,1,1,2,33, sidomos ,200,9667,9867,773.5,216,Si një muaj mjalti në male.
+119,1,1,2,34, Besian ,200,9867,10067,843.5,216,Si një muaj mjalti në male.
+119,1,1,2,35, Vorpsit. ,200,10067,10267,900.5,215,Si një muaj mjalti në male.
+119,1,1,3,0, Zbulohet ,452,895,1347,658.22,140.78,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,1, njeriu ,248,1347,1595,720.6,137.2,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,3, shpellave ,250,1647,1897,802.2,137,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,6," blu
+ADN-ja ",549,2398,2947,651.73,176.36,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,8, marrë ,200,3048,3248,731.75,177.5,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,10, dhëmballa ,501,3397,3898,831.1,173,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,12, pjekurisë ,395,3950,4345,935.62,175,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,15, gjuetari-mbledhës ,550,4597,5147,1096.36,177,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,16, evropian ,349,5147,5496,1199.86,181,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,19, dhënë ,356,5944,6300,646.14,217.14,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,20, shkencëtarëve ,298,6300,6598,715.83,215,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,22, pamje ,300,6748,7048,859.33,216,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,24, paprecedentë ,451,7097,7548,976.11,218.89,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,26, njerëzve ,300,7648,7948,1083.83,219.83,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,27, modernë ,450,7948,8398,1159.22,220,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,28, përpara ,650,8398,9048,1224.69,221,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,29, shfaqjes ,349,9498,9847,665.57,253.14,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,31, bujqësisë. ,701,9899,10600,772.43,253,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,32, Njeriu ,245,10600,10845,844.8,254.8,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,33," mezolitik, ",753,10845,11598,898.07,256,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,36, jetoi ,251,11748,11999,997.6,256,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,38, Spanjë ,400,12098,12498,1067,256,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,39, rreth ,251,12498,12749,1116,256,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,40,"7,000",300,12749,13049,1168.17,257.17,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,43," parë, ",451,13550,14001,655.56,291.89,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,46, përzierje ,302,14296,14598,777,298,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,48, pazakontë ,450,14698,15148,890.78,297.22,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,51," blu, ",206,15395,15601,1007,297,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,52, flokëve ,447,15601,16048,1061.56,297,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,54, zinj ,200,16148,16348,1128.25,297,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,56, kafe ,300,16498,16798,1198,297.33,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,58, lëkurës ,399,17198,17597,644.25,335.62,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,59, së ,199,17597,17796,699.75,338,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,60," errët, ",251,17796,18047,730.8,338,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,61, sipas ,203,18047,18250,779.25,338,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,62, analizave ,350,18250,18600,846.14,338,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,64, përbërjes ,350,18698,19048,948,337.86,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,67, gjenetike. ,958,19298,20256,1061,337.86,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,0, Ai ,301,892,1193,633.83,139.83,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,2, ndoshta ,201,1242,1443,730.5,143.75,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,3, intolerant ,351,1443,1794,796.57,141.71,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,4, ndaj ,196,1794,1990,860.75,139.5,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,5, laktozës ,302,1990,2292,911,134,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,7, kishte ,355,2439,2794,1005.71,133,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,9, shumë ,250,2943,3193,1092.4,133,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,10, vështirësi ,546,3193,3739,1157.91,133.55,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,12, tretjen ,200,3792,3992,1241.75,138.5,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,14, ushqimeve ,450,4493,4943,680.89,181.67,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,16, niseshte ,347,5043,5390,798.57,174.14,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,17, sesa ,203,5390,5593,857.5,175,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,18, fermerët ,298,5593,5891,908.67,176.83,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,20, transformuan ,500,5993,6493,1036.7,179.5,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,21, dietën ,301,6493,6794,1111.17,177.17,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,26, kur ,200,7843,8043,642,210.75,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,27, patën ,250,8043,8293,671.4,216.6,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,28, interes ,300,8293,8593,732.17,214.17,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,30, veglat ,303,8690,8993,815.17,213,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,32, revolucionin ,450,9093,9543,920.44,214,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,35, bujqësor. ,857,9743,10600,1066,211.6,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,0, Shpikja ,350,643,993,657.71,140.71,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,2, bujqësisë ,399,1093,1492,746.38,141.25,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,5, njerëzit ,250,1643,1893,849,139.8,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,7, kafshët ,249,2044,2293,953.8,139,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,9, kontakt ,203,2340,2543,1038.25,139,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,10, shumë ,298,2543,2841,1095,137.83,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,13, ngushtë ,350,2993,3343,1225.14,136.57,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,15, njerëzit ,450,3593,4043,651,168,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,17, gjasë ,200,4093,4293,740.75,170,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,18, zhvilluan ,301,4293,4594,803.17,173.17,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,19, sisteme ,349,4594,4943,874.43,176.71,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,20, imunitare ,250,4943,5193,947.2,178.4,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,26, mbrojtur ,401,5592,5993,1178.88,174,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,28, infeksionet ,450,6344,6794,661.22,213.11,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,30, transmetoheshin ,547,6893,7440,803.45,214.45,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,31, nga ,202,7440,7642,897.75,217,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,32, kafshët. ,302,7642,7944,953.5,217,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,34, shkencëtarët ,301,8043,8344,1091.67,217,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,38, mbivlerësuar ,601,9093,9694,666.25,253.17,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,39, ndikimin ,399,9694,10093,765.38,252,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,42, pasur ,301,10244,10545,877.5,254,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,43, bujqësia ,350,10545,10895,936.71,254.71,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,45, formësimin ,499,10994,11493,1043.4,256,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,47, sistemit ,305,11539,11844,1140.67,260.17,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,48, imunitar ,302,11844,12146,1208,261.67,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,51, sepse ,300,12744,13044,708.67,292.33,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,52, testet ,250,13044,13294,755.2,292.2,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,54, ADN-në ,402,13392,13794,843.88,293.62,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,56, këtij ,201,13842,14043,919.75,297,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,57, gjuetari-mbledhës ,602,14043,14645,1007.08,297.92,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,58, treguan ,399,14645,15044,1109.62,295.88,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,61, tashmë ,347,15194,15541,1224.86,295.14,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,62, mbartte ,299,16246,16545,671.67,336.33,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,63, mutacione ,399,16545,16944,729.5,336,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,65, forconin ,352,17092,17444,835.29,335.86,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,66, sistemin ,297,17444,17741,911,333.67,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,67, imunitar ,303,17741,18044,980.17,333,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,70, përballuar ,245,18244,18489,1103.8,333,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,71, baktere ,305,18489,18794,1176.5,333,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,73, ndryshme. ,400,19294,19694,668.62,372.75,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,75, vazhdojnë ,499,19841,20340,791.2,378.3,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,77, ekzistojnë ,350,20444,20794,905.14,375,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,79, evropianët ,300,20944,21244,1015.83,375,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,80, modernë ,299,21244,21543,1103.83,374.17,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,0, 'Para ,395,762,1157,644.12,140.38,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,3, fillonim ,193,1462,1655,741,140,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,5," punë, ",349,1812,2161,840,142,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,6, kisha ,194,2161,2355,891.5,142,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,10, çfarë ,250,2757,3007,1026.4,139.2,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,13," gjenim', ",303,3209,3512,1152.83,138,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,15, Carles ,200,3658,3858,1227.5,138.5,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,16," Lalueza-Fox, ",649,4111,4760,673,177.85,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,18, cili ,199,4863,5062,755.75,178,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,19, drejtoi ,300,5062,5362,799.67,173.67,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,20, studimin ,251,5362,5613,861.4,173.6,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,22, Institutin ,251,5762,6013,952.8,178.2,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,24, Biologjisë ,548,6062,6610,1042.55,181.09,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,25, Evolucionare ,498,6610,7108,1140.6,182,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,27, Barcelonë. ,650,7512,8162,663.38,217,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,28, 'Shumica ,300,8162,8462,757.67,217,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,30, atyre ,203,8509,8712,834.75,216,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,31, ideve ,200,8712,8912,882.25,216,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,32, rezultuan ,295,8912,9207,937.83,216,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,33, të ,305,9207,9512,990.5,216.33,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,31, ideve ,551,9611,10162,874.27,216.18,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,32, rezultuan ,251,10162,10413,939,216,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,34, ishin ,253,10511,10764,1024.4,216,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,35, krejtësisht ,348,10764,11112,1088.86,215,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,37, gabuara.' ,398,11112,11510,1188.75,218.25,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,0, Ekipi ,402,838,1240,651,139.12,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,1, spanjoll ,247,1240,1487,704,137,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,3, punën ,298,1640,1938,796.17,137,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,9, speleologësh ,602,2436,3038,1023.17,137,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,10, zbuluan ,352,3038,3390,1104,136,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,12, skelete ,306,3535,3841,1201.5,135.5,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,15, sistem ,495,4190,4685,655.8,180.2,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,18, dhe ,201,4886,5087,767.75,179.25,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,19, kompleks ,353,5087,5440,822,173.29,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,20, shpellash ,297,5440,5737,906.67,173.83,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,22, Malet ,253,5840,6093,1001,175.6,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,23, Kantabriane ,547,6093,6640,1071.64,177.82,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,25, veriperëndim ,550,6790,7340,1191.36,180.45,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,27, Spanjës ,253,7791,8044,657.6,215.4,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,30,2006,250,8240,8490,786.6,213.2,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,31, Mbetjet ,250,8490,8740,838.8,211.4,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,32," njerëzore, ",344,8740,9084,914.57,213,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,36, përkisnin ,306,9384,9690,1066,207.17,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,38, burrave ,354,9787,10141,1161,215.43,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,41, 30-at ,398,10291,10689,1249.62,218.75,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,43, tyre ,249,11141,11390,645.8,255.2,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,45," hershme, ",452,11439,11891,728.89,258.11,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,47, ruajtur ,250,11991,12241,823.6,256,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,48, jashtëzakonisht ,350,12241,12591,921.29,252.14,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,50, nga ,200,12742,12942,1041.75,247.5,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,51, mjedisi ,349,12942,13291,1079,252.14,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,53, freskët ,296,13338,13634,1166.5,257.33,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,55, shpellës. ,200,13691,13891,1224,254.5,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,0, Datimi ,499,892,1391,650.7,139.2,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,2, karbon ,305,1487,1792,739.83,140,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,3, vlerësoi ,401,1792,2193,799.38,139.25,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,1, me ,250,2337,2587,705.8,142,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,3, vlerësoi ,351,2741,3092,803.86,144,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,5, mbetjet ,251,3192,3443,900.8,139,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,7, rreth ,356,3536,3892,986.29,143.57,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,8,7000,201,3892,4093,1035.5,138.5,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,11," vjetra, ",200,4292,4492,1146.25,131.75,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,12, përpara ,500,4492,4992,1191.1,134.4,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,14, bujqësia ,602,5387,5989,666.08,172.83,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,16, kishte ,306,6036,6342,742,180,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,19, Evropë ,299,6687,6986,882.5,171.83,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,20, nga ,206,6986,7192,925,174.5,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,21, Lindja ,200,7192,7392,976.75,182,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,23, Mesme. ,343,7492,7835,1046.57,182.29,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,24, Koha ,202,7835,8037,1107,179,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,25, përputhej ,451,8037,8488,1175.89,172.89,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,27, artefakte ,795,8642,9437,670.12,222.25,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,28, antike ,305,9437,9742,722.17,219.5,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,30, gjetura ,249,9840,10089,807.4,217.8,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,33, duke ,255,10387,10642,931,215.8,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,34, përfshirë ,296,10642,10938,987.83,214,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,35, dhëmbët ,397,10938,11335,1065.12,212.38,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,37, drerit ,243,11392,11635,1134.2,215.8,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,40, që ,350,11992,12342,1252,217.14,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,42, vareshin ,454,12638,13092,664.78,254.11,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,44, zbukurime ,554,13139,13693,755.09,252.55,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,46, rrobat ,249,13740,13989,854.4,251,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,48, njerëzve. ,201,14036,14237,911.25,254.25,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,0, Përveç ,450,1177,1627,638.33,135.11,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,1, ndikimit ,297,1627,1924,711,138.83,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,2," shkencor, ",296,1924,2220,792.17,137.67,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,3, artistët ,356,2220,2576,862.86,134.14,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,4, mund ,200,2576,2776,921.75,132.75,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,7, të ,192,2976,3168,1021,132.5,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,8, rishqyrtojnë ,508,3168,3676,1081.7,135.1,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,9, vizatimet ,250,3676,3926,1172.2,138.2,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,13, këta ,357,4368,4725,641,180.57,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,14, njerëz. ,351,4725,5076,695.86,182,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,15, “Shihni ,348,5076,5424,754.71,181.71,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,16, shumë ,202,5424,5626,814.25,177,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,17, rindërtime ,400,5626,6026,885.12,177,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,19, këtyre ,200,6078,6278,969.25,177,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,20, njerëzve ,348,6278,6626,1036.29,177,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,22, gjuajtur ,393,6776,7169,1154,177.75,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,24," mbledhur, ",450,7524,7974,656.67,215.89,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,27, duken ,304,8222,8526,801.5,216,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,29, evropianë ,394,8576,8970,890.75,216,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,30, modernë ,403,8970,9373,971.75,215.12,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,32, lëkurë ,249,9527,9776,1061,215,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,34, çelët. ,202,9870,10072,1130.25,215.5,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,36, shihni ,299,10176,10475,1225.67,219,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,39, rindërtim ,193,10876,11069,683.5,261.5,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,38, një ,201,11069,11270,648,252,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,39, rindërtim ,251,11270,11521,697.2,252,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,42, gjuetari-mbledhës ,595,11626,12221,847,252,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,43, mezolitik ,452,12221,12673,969.33,252,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,45, lëkurë ,250,12776,13026,1054.4,256,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,47, errët ,194,13076,13270,1127.5,258,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,51, tha ,202,13568,13770,1257,260.5,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,52, Lalueza-Fox. ,351,13976,14327,677.57,295.14,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,0, Ekipi ,404,581,985,640.62,138.88,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,1, spanjoll ,351,985,1336,705.14,140,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,2, vazhdoi ,299,1336,1635,768.17,140,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,4, krahasonte ,350,1785,2135,871.14,140,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,5, gjenomin ,297,2135,2432,954.67,140.67,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,7, këtij ,249,2432,2681,1028.4,141,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,8, gjuetari-mbledhës ,354,2681,3035,1105.86,143,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,12, evropianëve ,750,3785,4535,674.53,173.27,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,13, modernë ,297,4535,4832,759.17,177,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,15, rajone ,207,4928,5135,868.75,178,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,17, ndryshme ,354,5181,5535,952.71,179.71,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,18, për ,191,5535,5726,1008,181,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,23, mund ,248,6084,6332,1150.8,180.2,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,27, zbuluan ,201,6680,6881,711.5,222,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,26, Ata ,294,7036,7330,636,213.17,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,27, zbuluan ,247,7330,7577,690.6,213,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,29, ADN-ja ,241,7635,7876,774.4,211.4,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,31, lashtë ,202,7979,8181,853.5,214.25,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,32, përputhej ,405,8181,8586,923.62,220.5,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,34, shumë ,202,8726,8928,1017.75,219.25,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,36, përbërjen ,301,8985,9286,1113.5,218.33,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,37, gjenetike ,449,9286,9735,1190.78,218.44,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,39, njerëzve ,604,10080,10684,662.33,251.08,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,41, jetojnë ,342,10835,11177,752.71,253,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,43, Evropën ,405,11332,11737,842.38,254,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,44," Veriore, ",343,11737,12080,916.43,255.29,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,45, veçanërisht ,451,12080,12531,996,260.78,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,47, Suedi ,450,12635,13085,1086.11,254.56,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.
+119,1,1,3,50, Finlandë. ,355,13230,13585,1196.57,255.57,Ato ishin nga koha përpara futjes së bujqësisë në Evropë.

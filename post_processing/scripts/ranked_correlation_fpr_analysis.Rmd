@@ -1,0 +1,549 @@
+---
+title: "Exploratory Analysis for MoTR Reading Data"
+output: html_notebook
+---
+
+```{r}
+shhh <- suppressPackageStartupMessages # It's a library, so shhh!
+
+shhh(library( mgcv ))
+shhh(library(dplyr))
+shhh(library(ggplot2))
+shhh(library(lme4))
+shhh(library(tidymv))
+shhh(library(gamlss))
+shhh(library(gsubfn))
+shhh(library(lmerTest))
+shhh(library(tidyverse))
+shhh(library(boot))
+shhh(library(rsample))
+shhh(library(plotrix))
+shhh(library(ggrepel))
+shhh(library(mgcv))
+
+shhh(library(brms))
+shhh(library(bayesplot))
+shhh(library(patchwork))
+shhh(library(MASS))
+shhh(library(tidyr))
+shhh(library(extraDistr))
+shhh(library(purrr))
+# For exercises with Stan code
+shhh(library(rstan))
+options(mc.cores = parallel::detectCores())
+rstan_options(auto_write = FALSE)
+
+library(car)
+library(coda)
+shhh(library(gridExtra))
+
+theme_set(theme_bw())
+options(digits=4)
+options(scipen=999)
+set.seed(444)
+pipe_message = function(.data, status) {message(status); .data}
+
+```
+
+
+# Read in MoTR Data
+
+```{r}
+
+rate = 160
+
+file_prefix = "../data/provo_f160/"
+fnames = list.files(path=file_prefix)
+
+df = data.frame()
+for (f in fnames) {
+  temp = read.csv(paste0(file_prefix, "/", f)) %>%
+    mutate(subj = str_remove(f, "_reading_measures.csv"))
+  df = rbind(df, temp)
+}
+
+# Filter out readers who don't answer the comprehension questions correctly
+filter_df = df %>%
+  group_by(para_nr, subj) %>% summarise(correct = if_else(unique(correctness) == 1, 1, 0)) %>% ungroup() %>%
+  drop_na() %>%
+  group_by(subj) %>% summarise(p_correct = mean(correct)) %>% ungroup() %>%
+  mutate(p_correct = round(p_correct, digits = 2))
+
+filter_df = filter_df %>% filter(p_correct < 0.8)
+filter_list = filter_df$subj
+## reader_3:0.70, reader_60:0.79, reader_76:0.72 , reader_256:0.71 , reader_262:0.57 
+
+raw_df = df %>%
+  filter(! subj %in% c(filter_list)) %>%
+  mutate(word = str_trim(word)) %>%
+  mutate(subj = str_remove(subj, "reader_")) %>%
+  mutate(subj = as.character(subj)) %>%
+  # filter(! subj %in% c("3", "60", "76", "256", "262")) %>% # Explanation for this filtering
+  mutate(FPReg = if_else(total_duration == 0, -1, FPReg)) %>% #If the word is skipped we can't say that it wasn't regressed on the first pass. Set to a "NA"
+  dplyr::select(expr_id, cond_id, para_nr, word, word_nr, first_duration, total_duration, gaze_duration, go_past_time, FPReg, subj)
+
+length(unique(raw_df$subj))
+
+df %>%
+  filter(! subj %in% c(filter_list)) %>%
+  filter(FPReg >= 0) %>%
+  dplyr::select(FPReg) %>%
+  drop_na() %>%
+  summarise( m = mean(FPReg))
+
+df %>%
+  filter(! subj %in% c(filter_list)) %>%
+  dplyr::select(FPFix) %>%
+  drop_na() %>%
+  summarise( m = mean(FPFix))
+
+
+```
+
+
+```{r}
+# Average across subjects
+motr_agg_df = raw_df %>%
+  gather(metric, value, 6:10) %>%
+    filter(value >= 0) %>% #Removes the "NA" values for FPReg
+  
+    # ==== Remove skipped words
+    # mutate(zero = if_else(metric != "FPReg" & value == 0,T, F)) %>%
+    # filter(zero == F) %>%
+  
+    drop_na() %>%
+    group_by(para_nr, word_nr, word, metric) %>% 
+      mutate(outlier = if_else(metric != "FPReg" & value > (mean(value) + 3 * sd(value)), T, F)) %>% filter(outlier == F) %>%
+      summarise(value = mean(value), nsubj = length(unique(subj))) %>%
+  ungroup() %>%
+  arrange(para_nr, word_nr) %>%
+  rename(text_id = para_nr, word_text_idx = word_nr, motr_value = value)
+
+```
+
+
+
+
+# Comparison to Provo
+
+
+```{r}
+# Read in Provo surprisal, frequency and length data
+provo_modeling_df = read.csv("../data/provo_stats.csv") %>%
+  dplyr::select(text_id, sent_id, trigger_idx, word, freq, surp, len) %>%
+  rename(word_idx = trigger_idx)
+
+provo_modeling_df
+# View(provo_modeling_df)
+
+```
+
+```{r}
+# Read in Provo eyetracking data
+
+provo_raw_df = read.csv("../data/provo_eyetracking.csv")
+
+```
+
+```{r}
+
+# unique(provo_raw_df$Participant_ID)
+# length(unique(provo_raw_df$Participant_ID))
+
+provo_eyetracking_df = provo_raw_df %>%
+  dplyr::select(Participant_ID, Text_ID, Sentence_Number, Word_In_Sentence_Number, Word, Word_Number, IA_FIRST_FIX_PROGRESSIVE, IA_FIRST_RUN_DWELL_TIME, IA_DWELL_TIME, IA_REGRESSION_PATH_DURATION, IA_REGRESSION_OUT, IA_SKIP) %>%
+  rename( #first_duration = IA_FIRST_FIXATION_DURATION,   
+          gaze_duration = IA_FIRST_RUN_DWELL_TIME,
+          total_duration = IA_DWELL_TIME,
+          go_past_time = IA_REGRESSION_PATH_DURATION,
+          subj = Participant_ID,
+          text_id = Text_ID,
+          sent_id = Sentence_Number,
+          word_idx = Word_In_Sentence_Number,
+          word_text_idx = Word_Number,   # IA_ID?
+          word = Word,      # Word?
+          FPReg = IA_REGRESSION_OUT,
+          skip = IA_SKIP,
+          ff_progressive = IA_FIRST_FIX_PROGRESSIVE) %>%
+  mutate(first_duration = gaze_duration) %>%
+  mutate(gaze_duration = if_else(ff_progressive == 0, 0, as.double(gaze_duration)),
+         go_past_time = if_else(ff_progressive == 0, 0, as.double(go_past_time))) %>%
+  dplyr::select(-ff_progressive) %>%
+  
+  mutate(
+    gaze_duration = if_else(total_duration == 0, 0, as.double(gaze_duration)),
+      go_past_time = if_else(total_duration == 0, 0, as.double(go_past_time)),
+      FPReg = if_else(total_duration == 0, -1, as.double(FPReg)),
+      first_duration =  if_else(total_duration == 0, 0, as.double(first_duration)),
+  ) %>%
+  
+  # drop_na() %>%     # will drop the whole row with all the metrics
+  gather(metric, value, 7:12) %>%
+  filter(value >= 0) %>%          # filter skipped word in eye tracking data for FPReg
+  # ==== Remove skipped words
+  # mutate(zero = if_else(metric != "FPReg" & value == 0,T, F)) %>%
+  # filter(zero == F) %>%
+  
+  # mutate(value = if_else(is.na(value), as.integer(0), as.integer(value))) %>%
+  # mutate(value = if_else(metric != "FPReg" & is.na(value), as.integer(0), as.integer(value))) %>%
+  drop_na() %>%
+  mutate(word = str_trim(word)) %>%
+  mutate(subj = str_remove(subj, "Sub")) %>%
+  mutate(subj = as.integer(subj)) %>%
+    group_by(text_id, word_text_idx, sent_id, word_idx, word, metric) %>%
+    mutate(outlier = if_else(metric != "FPReg" & metric != "skip" & value > (mean(value) + 3 * sd(value) ), T, F)) %>%
+    filter(outlier == F) %>%
+  ungroup() #%>%
+
+# Aggregate cross-participant data for all subjects
+provo_eyetracking_agg_df = provo_eyetracking_df %>%
+  group_by(text_id, word_text_idx, sent_id, word_idx, word, metric) %>%
+    summarise(value = mean(value),
+              nsubj = length(unique(subj))) %>%
+    ungroup()
+
+# View(provo_eyetracking_df)
+
+# View(provo_eyetracking_agg_df)
+# write.csv(provo_eyetracking_agg_df, file = "/Users/cui/Desktop/MoTR/pipeline/ancillary_data/provo_eyetracking_agg_df.csv", row.names = FALSE)
+
+provo_raw_df %>%
+  dplyr::select(IA_REGRESSION_OUT) %>%
+  drop_na() %>%
+  summarise( m = mean(IA_REGRESSION_OUT))
+
+provo_raw_df %>%
+  dplyr::select(IA_SKIP) %>%
+  drop_na() %>%
+  summarise( m = mean(IA_SKIP))
+
+
+```
+
+```{r}
+
+# Split the eyetracking data in two by subjects to see how well it correlates with itself
+provo_eyetracking_subj1_df_temp = provo_eyetracking_df %>%
+  filter(subj <= 42) %>%
+  mutate(word_text_idx = as.integer(word_text_idx - 1)) %>%
+  group_by(text_id, word_text_idx, sent_id, word_idx, word, metric) %>%
+    summarise(value = mean(value)) %>%
+  ungroup() %>%
+  rename(value_1 = value) #%>%
+  # dplyr::select(-sent_id, -word_idx)
+
+# View(provo_eyetracking_subj1_df_temp)
+
+provo_eyetracking_subj1_df = merge(provo_eyetracking_subj1_df_temp, motr_agg_df, by=c("text_id", "word_text_idx", "metric")) %>%
+  arrange(text_id, sent_id, word_idx) %>%
+  filter(!(text_id == 13 & word_text_idx >= 20 & word_text_idx <= 52)) %>%
+  filter(!(text_id == 3 & word_text_idx >= 46 & word_text_idx <= 57)) %>%
+  rename(word = word.y) %>%
+  dplyr::select(text_id, word_text_idx, metric, word, value_1)
+
+# View(provo_eyetracking_subj1_df)
+
+provo_eyetracking_subj2_df = provo_eyetracking_df %>%
+  filter(subj > 42) %>%
+  mutate(word_text_idx = as.integer(word_text_idx - 1)) %>%
+  group_by(text_id, word_text_idx, sent_id, word_idx, word, metric) %>%
+    summarise(value = mean(value)) %>%
+  ungroup() %>%
+    rename(value_2 = value)%>%
+  dplyr::select(-sent_id, -word_idx)
+
+# View(provo_eyetracking_subj2_df)
+  
+provo_eyetr_grouped_df = merge(provo_eyetracking_subj2_df, provo_eyetracking_subj1_df, by=c("text_id", "word_text_idx", "metric")) %>%
+  # filter(word.x == word.y) %>%
+  dplyr::select(-word.y) %>%
+  group_by(metric) %>%
+    mutate(motr_outlier = if_else(metric != "FPReg" & metric != "skip" & value_1 > (mean(value_1) + 3 * sd(value_1) ), T, F)) %>%
+    filter(motr_outlier == F) %>%
+    mutate(eyetr_outlier = if_else(metric != "FPReg" & metric != "skip" & value_2 > (mean(value_2) + 3 * sd(value_2) ), T, F)) %>%
+    filter(eyetr_outlier == F) %>%
+  ungroup() %>%
+  gather(measure, value, c("value_1", "value_2")) %>%
+  dplyr::select(-motr_outlier, -eyetr_outlier)
+
+# View(provo_eyetr_grouped_df)
+
+```
+
+
+```{r}
+provo_df = merge(provo_eyetracking_agg_df, provo_modeling_df, by=c("text_id", "sent_id", "word_idx")) %>%
+  mutate(word_text_idx = as.integer(word_text_idx - 1)) %>%
+  arrange(text_id, sent_id, word_idx) %>%
+  rename(eyetr_value = value) 
+
+provo_df = merge(provo_df, motr_agg_df, by=c("text_id", "word_text_idx", "metric")) %>%
+arrange(text_id, sent_id, word_idx) %>%
+  # almost all the word.x != word.y is because of normalization problem, so we can keep them, instead, deleting some special cases
+filter(!(text_id == 13 & word_text_idx >= 20 & word_text_idx <= 52)) %>%
+  filter(!(text_id == 3 & word_text_idx >= 46 & word_text_idx <= 57)) %>%
+# filter(word.x == word) #%>%
+dplyr::select(-word.x, -word.y) %>%
+group_by(metric) %>%
+  mutate(motr_outlier = if_else(metric != "FPReg" & motr_value > (mean(motr_value) + 3 * sd(motr_value) ), T, F)) %>%
+  filter(motr_outlier == F) %>%
+  mutate(eyetr_outlier = if_else(metric != "FPReg" & eyetr_value > (mean(eyetr_value) + 3 * sd(eyetr_value) ), T, F)) %>%
+  filter(eyetr_outlier == F) %>%
+ungroup() %>%
+gather(measure, value, c("eyetr_value", "motr_value")) %>%
+dplyr::select(-motr_outlier, -eyetr_outlier)
+  
+# View(provo_df)
+# provo_df
+```
+
+
+# Bayesian -- use Stan -- motr & eyetr correlation
+```{r}
+print("Gaze Duration")
+gd_df = provo_df %>% filter(metric == "gaze_duration") %>% 
+  spread(measure, value) %>%
+  # smoothing, if includes 0s
+  mutate(eyetr_value =  pmax(eyetr_value, 1),
+         motr_value = pmax(motr_value, 1)
+  ) %>%
+  mutate(eyetr_value_log = log(eyetr_value),
+         motr_value_log = log(motr_value))
+print(cor.test(gd_df$eyetr_value, gd_df$motr_value)$estimate)
+print(cor.test(gd_df$eyetr_value_log, gd_df$motr_value_log)$estimate)
+# View(gd_df)
+```
+
+
+```{r}
+gd_df %>% 
+  gather(measure, value, 12:15) %>%
+  ggplot(aes(x = value)) +
+  geom_density() +
+  facet_wrap(~measure, scales = "free") +
+  theme_bw() +
+  scale_fill_brewer(palette = "Set1")
+  
+```
+=======================================================RANK=======================================================
+
+# correlate motr-eyetr ranked data
+
+```{r}
+print("Rank First Pass Regression Prob. all data")
+reg_df_rank = provo_df %>% filter(metric == "FPReg") %>% 
+  spread(measure, value) %>%
+  # filter(eyetr_value > 0, motr_value > 0) %>%
+  # mutate(eyetr_rank = rank(eyetr_value, ties.method = "max"), 
+  #        motr_rank = rank(motr_value, ties.method = "max"))
+    mutate(eyetr_rank = eyetr_value, 
+         motr_rank = motr_value)
+
+reg_df_rank_drop0s = provo_df %>% filter(metric == "FPReg") %>% 
+  spread(measure, value) %>%
+  filter(eyetr_value > 0, motr_value > 0) %>%
+  # mutate(eyetr_rank = rank(eyetr_value, ties.method = "max"), 
+  #        motr_rank = rank(motr_value, ties.method = "max"))
+      mutate(eyetr_rank = eyetr_value, 
+         motr_rank = motr_value)
+
+# View(reg_df_rank_drop0s)
+print(cor.test(reg_df_rank$eyetr_rank, reg_df_rank$motr_rank)$estimate)
+print(cor.test(reg_df_rank$eyetr_rank, reg_df_rank$motr_rank)$p.value)
+
+print(cor.test(reg_df_rank_drop0s$eyetr_rank, reg_df_rank_drop0s$motr_rank)$estimate)
+print(cor.test(reg_df_rank_drop0s$eyetr_rank, reg_df_rank_drop0s$motr_rank)$p.value)
+
+reg_df_rank %>% 
+  gather(measure, value, 14:15) %>%
+  ggplot(aes(x = value)) +
+  geom_density() +
+  facet_wrap(~measure, scales = "free") +
+  theme_bw() +
+  scale_fill_brewer(palette = "Set1")
+
+reg_df_rank_drop0s %>% 
+  gather(measure, value, 14:15) %>%
+  ggplot(aes(x = value)) +
+  geom_density() +
+  facet_wrap(~measure, scales = "free") +
+  theme_bw() +
+  scale_fill_brewer(palette = "Set1")
+
+reg_temp_rank <- reg_df_rank[c("eyetr_rank", "motr_rank")] %>% data.matrix()
+reg_temp_rank_drop0s <- reg_df_rank_drop0s[c("eyetr_rank", "motr_rank")] %>% data.matrix()
+
+# Set up the plotting area with two side-by-side plots
+par(mfrow = c(1, 2))
+# Plot the first data matrix td_temp
+plot(reg_temp_rank, pch = 16, col = "blue",
+     main = "FPReg ranked")
+plot(reg_temp_rank_drop0s, pch = 16, col = "blue",
+     main = "FPReg ranked drop0s ")
+
+
+```
+
+```{r, eval=FALSE}
+reg_rank_data = list(x=reg_temp_rank, N=nrow(reg_temp_rank))
+
+fit_reg_rank = stan(
+  file="./stan_models/bivariate_normal_reg.stan", 
+  data=reg_rank_data, 
+  iter=4000, 
+  chains=4, 
+  cores=8,
+  seed=444,
+  # control=list(adapt_delta=0.99), 
+  verbose = FALSE
+  )
+
+# Save the model 
+fit_reg_rank@stanmodel@dso <- new("cxxdso")
+saveRDS(fit_reg_rank, file = paste0("./bayesian_models/bayesian_models_correlation/origin_motr_eyetr_FPReg_cor.rds"))
+
+```
+
+
+
+
+```{r}
+fit_rank_all = readRDS("./bayesian_models/bayesian_models_correlation/ranked_motr_eyetr_FPReg_cor.rds")
+fit_rank_all_drop0s = readRDS("./bayesian_models/bayesian_models_correlation/ranked_motr_eyetr_FPReg_cor_drop0s.rds")
+
+fit_origin_all = readRDS("./bayesian_models/bayesian_models_correlation/origin_motr_eyetr_FPReg_cor.rds")
+fit_origin_all_drop0s = readRDS("./bayesian_models/bayesian_models_correlation/origin_motr_eyetr_FPReg_cor_drop0s.rds")
+
+efit_rank_all = readRDS("./bayesian_models/bayesian_models_correlation/ranked_eyetr_eyetr_FPReg_cor.rds")
+
+
+
+print('---------------------------- First Pass Regression ranked all data with 0s--------------------------------------------')
+print(fit_rank_all)
+
+print('---------------------------- First Pass Regression ranked all data no 0s--------------------------------------------')
+print(fit_rank_all_drop0s)
+
+print('---------------------------- First Pass Regression original all data with 0s--------------------------------------------')
+print(fit_origin_all)
+
+print('---------------------------- First Pass Regression original all data no 0s--------------------------------------------')
+print(fit_origin_all_drop0s)
+
+print('---------------------------- eyetr-eyetr First Pass Regression ranked all data with 0s--------------------------------------------')
+print(efit_rank_all)
+
+
+```
+
+```{r}
+print('---------------------------- First Pass Regression ranked all with 0s--------------------------------------------')
+rho_mreg_fit_rank_all = as.numeric(extract(fit_rank_all, "rho")[[1]])
+mean = mean(rho_mreg_fit_rank_all)
+crI = quantile(rho_mreg_fit_rank_all, c(.025, .975))
+hpd99 = HPDinterval(as.mcmc(rho_mreg_fit_rank_all), prob=0.95)
+cat("Mean: ", mean, "\nHPD: [", hpd99[,"lower"], ", ", hpd99[,"upper"], "]", sep="", "\ncrI: [", crI[1], ", ", crI[2], "]\n")
+
+print('---------------------------- First Pass Regression ranked all no 0s--------------------------------------------')
+rho_mreg_fit_rank_all_drop0s = as.numeric(extract(fit_rank_all_drop0s, "rho")[[1]])
+mean = mean(rho_mreg_fit_rank_all_drop0s)
+crI = quantile(rho_mreg_fit_rank_all_drop0s, c(.025, .975))
+hpd99 = HPDinterval(as.mcmc(rho_mreg_fit_rank_all_drop0s), prob=0.95)
+cat("Mean: ", mean, "\nHPD: [", hpd99[,"lower"], ", ", hpd99[,"upper"], "]", sep="", "\ncrI: [", crI[1], ", ", crI[2], "]\n")
+
+print('---------------------------- First Pass Regression origin all with 0s--------------------------------------------')
+rho_mreg_fit_origin_all = as.numeric(extract(fit_origin_all, "rho")[[1]])
+mean = mean(rho_mreg_fit_origin_all)
+crI = quantile(rho_mreg_fit_origin_all, c(.025, .975))
+hpd99 = HPDinterval(as.mcmc(rho_mreg_fit_origin_all), prob=0.95)
+cat("Mean: ", mean, "\nHPD: [", hpd99[,"lower"], ", ", hpd99[,"upper"], "]", sep="", "\ncrI: [", crI[1], ", ", crI[2], "]\n")
+
+print('---------------------------- First Pass Regression origin all no 0s--------------------------------------------')
+rho_mreg_fit_origin_all_drop0s = as.numeric(extract(fit_origin_all_drop0s, "rho")[[1]])
+mean = mean(rho_mreg_fit_origin_all_drop0s)
+crI = quantile(rho_mreg_fit_origin_all_drop0s, c(.025, .975))
+hpd99 = HPDinterval(as.mcmc(rho_mreg_fit_origin_all_drop0s), prob=0.95)
+cat("Mean: ", mean, "\nHPD: [", hpd99[,"lower"], ", ", hpd99[,"upper"], "]", sep="", "\ncrI: [", crI[1], ", ", crI[2], "]\n")
+
+print('---------------------------- First Pass Regression ranked all with 0s eye tracking--------------------------------------------')
+rho_ereg_fit_rank_all = as.numeric(extract(efit_rank_all, "rho")[[1]])
+mean = mean(rho_ereg_fit_rank_all)
+crI = quantile(rho_ereg_fit_rank_all, c(.025, .975))
+hpd99 = HPDinterval(as.mcmc(rho_ereg_fit_rank_all), prob=0.95)
+cat("Mean: ", mean, "\nHPD: [", hpd99[,"lower"], ", ", hpd99[,"upper"], "]", sep="", "\ncrI: [", crI[1], ", ", crI[2], "]\n")
+```
+
+```{r}
+print('---------------------------- First Pass Regression ranked all data with 0s --------------------------------------------')
+mrankreg_rand_samples <- extract(fit_rank_all, "x_rand")[[1]]
+selected_indices <- sample(1:nrow(mrankreg_rand_samples), 900)
+mrankreg_rand <- mrankreg_rand_samples[selected_indices, ]
+
+# create a blank plot first with appropriate limits
+plot(1, 1, xlim=c(0, 3500), ylim=c(0, 3500), type="n",
+     xlab = "Eye tracking value", ylab = "MoTR value", main = "FPReg") # 'type = "n"' makes sure the plot is blank
+
+# add points for x_rand with color
+points(mrankreg_rand[,1], mrankreg_rand[,2], col = "black", pch = 16)
+# add points for gd_temp with color red
+points(reg_temp_rank, pch=16, col="red")
+
+# add dataEllipse with color
+dataEllipse(mrankreg_rand, levels = c(0.5, 0.75), fill=T, plot.points = F, col="orange")
+dataEllipse(mrankreg_rand, levels = c(0.95, 0.99), fill=T, plot.points = F, col="blue")
+```
+
+
+# correlate eyetr-eyetr ranked data
+
+```{r}
+print("Rank First Pass Regression Prob. all data")
+ereg_df_rank = provo_eyetr_grouped_df %>% filter(metric == "FPReg") %>% distinct() %>% #group_by(text_id, metric, measure) %>%
+  # summarize(value = mean(value)) %>%
+  filter(!(row_number() %in% c(443, 444, 445, 446))) %>%
+    spread(measure, value) %>%
+  # filter(eyetr_value > 0, motr_value > 0) %>%
+  mutate(eyetr1_rank = rank(value_1, ties.method = "max"),
+         eyetr2_rank = rank(value_2, ties.method = "max"))
+
+ereg_df_rank_drop0s = provo_eyetr_grouped_df %>% filter(metric == "FPReg") %>% distinct() %>% #group_by(text_id, metric, measure) %>%
+  # summarize(value = mean(value)) %>%
+  filter(!(row_number() %in% c(443, 444, 445, 446))) %>%
+    spread(measure, value) %>%
+  filter(value_1 > 0, value_2 > 0) %>%
+  mutate(eyetr1_rank = rank(value_1, ties.method = "max"),
+         eyetr2_rank = rank(value_2, ties.method = "max"))
+
+# View(ereg_df_rank)
+print(cor.test(ereg_df_rank$eyetr1_rank, ereg_df_rank$eyetr2_rank)$estimate)
+print(cor.test(ereg_df_rank$eyetr1_rank, ereg_df_rank$eyetr2_rank)$p.value)
+print(cor.test(ereg_df_rank_drop0s$eyetr1_rank, ereg_df_rank_drop0s$eyetr2_rank)$estimate)
+print(cor.test(ereg_df_rank_drop0s$eyetr1_rank, ereg_df_rank_drop0s$eyetr2_rank)$p.value)
+
+ereg_df_rank %>% 
+  gather(measure, value, 7:8) %>%
+  ggplot(aes(x = value)) +
+  geom_density() +
+  facet_wrap(~measure, scales = "free") +
+  theme_bw() +
+  scale_fill_brewer(palette = "Set1")
+
+ereg_df_rank_drop0s %>% 
+  gather(measure, value, 7:8) %>%
+  ggplot(aes(x = value)) +
+  geom_density() +
+  facet_wrap(~measure, scales = "free") +
+  theme_bw() +
+  scale_fill_brewer(palette = "Set1")
+
+ereg_temp_rank <- ereg_df_rank[c("eyetr1_rank", "eyetr2_rank")] %>% data.matrix()
+ereg_temp_rank_drop0s <- ereg_df_rank_drop0s[c("eyetr1_rank", "eyetr2_rank")] %>% data.matrix()
+
+# Set up the plotting area with two side-by-side plots
+par(mfrow = c(1, 2))
+# Plot the first data matrix td_temp
+plot(ereg_temp_rank, pch = 16, col = "blue",
+     main = "FPReg ranked")
+plot(ereg_temp_rank_drop0s, pch = 16, col = "blue",
+     main = "FPReg ranked drop0s ")
+```
