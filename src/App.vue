@@ -75,7 +75,7 @@
         :options="['Computer Mouse', 'Computer Trackpad', 'Tjetër']" />
   <br>
   <br>
-  <p>2. Cilën dorë përdorët gjatë eksperiemntit?</p>
+  <p>2. Cilën dorë përdorët gjatë eksperimentit?</p>
     <MultipleChoiceInput
         :response.sync= "$magpie.measurements.hand"
         orientation="horizontal"
