@@ -163,4 +163,4 @@ However, it collects **mouse movement data** (not gaze), making it:
 
 ---
 
-Let me know if you'd like a **custom bash script** to automate data processing or a **Jupyter Notebook** version for easier exploration.
+
