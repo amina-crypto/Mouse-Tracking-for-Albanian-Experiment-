@@ -11,18 +11,8 @@ module.exports = {
     }
   },
   lintOnSave: false,
-  pluginOptions: {
-    lintStyleOnBuild: false,
-    stylelint: {}
-  },
-
-  // ✅ Use the repo name as base for Prod (GitHub Pages)
+  pluginOptions: { lintStyleOnBuild: false, stylelint: {} },
   publicPath: process.env.NODE_ENV === 'production'
-    ? '/Mouse-Tracking-for-Albanian-Experiment-/'   // note the trailing slash and hyphen
-    : '/',
-
-  // ✅ Remove the default progress plugin (avoids the schema clash entirely)
-  chainWebpack: (config) => {
-    config.plugins.delete('progress');
-  }
+    ? '/Mouse-Tracking-for-Albanian-Experiment-/' // <-- exact repo name + trailing slash
+    : '/'
 };
