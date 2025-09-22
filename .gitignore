@@ -1,0 +1,6 @@
+node_modules/
+dist/
+tracking/
+raw_collected_data/
+*.log
+
