@@ -11,12 +11,18 @@ module.exports = {
     }
   },
   lintOnSave: false,
-  pluginOptions: { lintStyleOnBuild: false, stylelint: {} },
+  pluginOptions: {
+    lintStyleOnBuild: false,
+    stylelint: {}
+  },
 
-  // ✅ Use repo subpath only when set (e.g., GitHub Pages project sites)
-publicPath:
-  process.env.NODE_ENV === 'production' && process.env.REPO_NAME
-    ? '/' + process.env.REPO_NAME + '/'
-    : '/'
+  // ✅ Use the repo name as base for Prod (GitHub Pages)
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/Mouse-Tracking-for-Albanian-Experiment-/'   // note the trailing slash and hyphen
+    : '/',
 
+  // ✅ Remove the default progress plugin (avoids the schema clash entirely)
+  chainWebpack: (config) => {
+    config.plugins.delete('progress');
+  }
 };

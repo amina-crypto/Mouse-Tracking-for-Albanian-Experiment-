@@ -4,3 +4,7 @@ tracking/
 raw_collected_data/
 *.log
 
+node_modules
+dist
+preview
+*.log
